@@ -1,0 +1,378 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200&display=swap');
+
+/*--------------------------------------------------------------------------------------------------------------
+------------------------------------------------HEADER--------------------------------------------------------*/
+
+.container-header{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 940px;
+    box-shadow: 0px 2px 2px 1px rgba(95, 95, 95, 0.459);
+    background: linear-gradient(90deg, #F1DECD 1.76%, rgba(251, 243, 236, 0.828125) 47.54%, rgba(255, 255, 255, 0.6) 99.99%, rgba(255, 255, 255, 0) 100%);
+}
+
+.container-header .logo{
+    margin-left: 20px;
+
+}
+
+.container-header h2{
+    position: absolute;
+    left: 120px;
+    font-family: 'Elsie Swash Caps', cursive;
+}
+
+.container-header h3{
+    align-self:flex-end;
+    margin-left: 20px;
+    margin-bottom: 24px;
+    font-family: 'Elsie Swash Caps', cursive;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+------------------------------------------------BODY--------------------------------------------------------*/
+body{
+    background-color: #e7c9c9ca;;
+}
+.container-main{
+    margin: 0 auto;
+    max-width: 940px;
+    background: linear-gradient(90deg, #F1DECD 1.76%, rgba(251, 243, 236, 0.828125) 47.54%, rgba(255, 255, 255, 0.6) 99.99%, rgba(255, 255, 255, 0) 100%);
+   
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 538px;
+    margin-left: 32px;
+    margin-top: 60px;
+}
+
+.text-container h1{
+    font-family: Gothic A1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    text-align: justify;
+    color: #353D41
+    
+}
+
+.text-container p{
+    font-family: Gothic A1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    text-align: justify;
+    color: #353D41;
+    margin-top: 20px;
+}
+
+.container-section{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+}
+
+.container-section img{
+    max-width: 320px;
+    margin-left: 17px;
+    margin-top: 40px;
+}
+
+.container-list{
+    max-width: 940px;
+    margin: 0 auto;
+    margin-top: 10px;
+
+}
+
+.lista-tarefas{
+    position: relative;
+    display: flex;
+    
+}
+
+.lista-tarefas img{
+    max-width: 100%;
+}
+
+.lista-tarefas h2{
+    position: absolute;
+    left: 20%;
+    top:5%;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 55px;
+    text-align: justify;
+    color: #353D41;
+   
+}
+
+.lista-tarefas input{
+    position: absolute;
+    width: 50%;
+    height: 5%;
+    left: 20%;
+    top:120px;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+   
+}
+
+.lista-tarefas button{
+
+    position: absolute;
+    width: 10%;
+    height: 5%;
+    top: 120px;
+    left: 75%;
+    background: rgba(247, 164, 164, 0.49);
+    border-radius: 15px;
+    cursor:pointer;
+    border: 1px solid black;
+    
+
+}
+
+.lista-tarefas ul{
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top:20%;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #353D41;
+    align-items: center;
+
+}
+
+.lista-tarefas button:hover{
+    background-color: #F6A4A4;
+}
+
+.ul-list li .apagar{
+    position: relative;
+    left: 5%;
+    width: 20%;
+    top:20%;
+    font-size: large;
+    
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+------------------------------------------------FOOTER--------------------------------------------------------*/
+
+.container-footer{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin: 0 auto;
+    max-width: 940px;
+    background: linear-gradient(90deg, #F1DECD 0%, rgba(248, 238, 229, 0.526042) 72.92%, rgba(255, 255, 255, 0) 100%);
+
+}
+
+.container-footer p {
+    margin-top: 37px;
+    margin-bottom: 15px;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 27px;
+
+}
+.container-footer p span{
+    font-family: 'Elsie Swash Caps', cursive;
+    font-weight: 550 ;
+
+}
+
+.container-footer img{
+    margin-top: 31px;
+    margin-bottom: 9px;
+    
+}
+
+@media (max-width:850px){
+    .container-section{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+}
+@media (max-width: 780px) {
+
+
+    .container-section{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lista-tarefas button{
+
+        position: absolute;
+        width: 10%;
+        height: 5%;
+        top: 15%;
+        left: 75%;
+}
+
+.lista-tarefas ul{
+
+    left: 25%;
+    top:25%;
+    font-size: medium;
+}
+
+.ul-list li .apagar{
+  
+    left: 10%;
+    width: 25%;
+    top:20%;
+    font-size: medium;
+    margin-bottom: 10px;
+    
+}
+
+    
+} 
+
+
+
+@media (max-width: 680px) {
+
+    .lista-tarefas button{
+        font-size: 15px;
+        width: 13%;
+        left: 72%;
+        top: 19%;
+    
+}
+
+    .lista-tarefas ul{
+
+        left: 25%;
+        top:25%;
+    }
+
+    .ul-list li .apagar{
+      
+        left: 5%;
+        width: 25%;
+        top:20%;
+        font-size: large;
+        
+    }
+    
+}
+
+@media (max-width: 415px) {
+
+    .container-footer p {
+        
+        font-size: 14px;
+        
+    }    
+
+    .lista-tarefas h2{
+        font-size: 32px;
+       
+    
+}
+
+    .lista-tarefas button{
+        font-size: 12px;
+        width: 20%;
+        top: 20%;
+        left: 65%;
+    
+}
+
+.lista-tarefas input{
+    font-size: 12px;
+    width: 40%;
+    top: 20%;
+
+}
+
+.text-container h1{
+    font-size: 24px;
+    text-align: justify;
+    color: #353D41;
+    font-weight: 700;
+    
+}
+
+.text-container p{
+    font-size: 20px; 
+}
+
+.lista-tarefas ul{
+
+    left: 30%;
+    top:30%;
+    font-size: medium;
+}
+
+.ul-list li .apagar{
+  
+    left: 10%;
+    width: 40%;
+    top:20%;
+    font-size: medium;
+    margin-bottom: 10px;
+    
+}
+
+
+}
+
+@media (max-width: 388px) {
+
+    
+    .container-header h3{
+        margin-top: 100px;
+       font-size: 16px;
+    }
+
+    .lista-tarefas ul{
+
+        left: 30%;
+        top:30%;
+        font-size: medium;
+    }
+
+    .ul-list li .apagar{
+      
+        left: 10%;
+        width: 40%;
+        top:20%;
+        font-size: medium;
+        margin-bottom: 10px;
+        
+    }
+    
+}
